@@ -1,6 +1,6 @@
 package demo;
 
-import demo.view.Login;
+import demo.view.Principal;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -14,7 +14,7 @@ public class App extends Application {
 
     public void start(Stage stage) {
 
-        Login login = new Login(stage);
+        Principal login = new Principal(stage);
         login.startStage();
 
     }
