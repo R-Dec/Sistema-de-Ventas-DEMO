@@ -16,6 +16,7 @@ public class CloseBar {
         stackPane.getStyleClass().add("close-bar");
 
         button = new Button("X");
+        button.getStyleClass().add("button");
 
         button.setOnAction(event -> controller.closeStage());
 

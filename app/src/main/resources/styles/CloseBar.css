@@ -3,3 +3,15 @@
     -fx-background-color: #527173;
 
 }
+
+.button{
+    -fx-background-color: #527173;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-prefHeight: 24px;
+    -fx-prefWidth: 14px;
+}
+
+.button:hover{
+    -fx-background-color: #3F6163;
+}
