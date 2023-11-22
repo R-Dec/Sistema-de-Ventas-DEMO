@@ -15,7 +15,7 @@ public class Controller {
     public Controller() {
 
         CloseBar closeBar = new CloseBar(this);
-        ContentValidation contentValidation = new ContentValidation();
+        ContentValidation contentValidation = new ContentValidation(this);
 
         vBox = new VBox();
         vBox.getChildren().addAll(closeBar.getStackPane(), contentValidation.getStackPane());
