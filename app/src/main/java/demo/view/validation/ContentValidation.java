@@ -1,6 +1,7 @@
 package demo.view.validation;
 
 import demo.view.Controller;
+import demo.view.content.ContentStage;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -39,7 +40,11 @@ public class ContentValidation {
         button = new Button("Enter");
         button.getStyleClass().add("button");
 
-        button.setOnAction(event -> controller.closeStage());
+        button.setOnAction(event -> {
+            controller.closeStage();
+            ContentStage contentStage = new ContentStage();
+            contentStage.startStage();
+        });
 
         credentialsVBox = new VBox();
         credentialsVBox.setSpacing(16);
