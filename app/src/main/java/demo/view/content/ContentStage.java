@@ -1,6 +1,9 @@
 package demo.view.content;
 
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -8,12 +11,20 @@ public class ContentStage {
 
     private Stage stage;
     private Scene scene;
+    private VBox vBox;
 
     public ContentStage() {
 
-        CloseBarContent closeBarContent = new CloseBarContent(this);
+        Screen screen = Screen.getPrimary();
+        Rectangle2D bounds = screen.getVisualBounds();
 
-        scene = new Scene(closeBarContent.getStackPane());
+        CloseBarContent closeBarContent = new CloseBarContent(this);
+        SelectorBar selectorBar = new SelectorBar();
+
+        vBox = new VBox();
+        vBox.getChildren().addAll(closeBarContent.getStackPane(), selectorBar.getStackPane());
+
+        scene = new Scene(vBox, bounds.getWidth(), bounds.getHeight());
 
         stage = new Stage();
         stage.initStyle(StageStyle.UNDECORATED);

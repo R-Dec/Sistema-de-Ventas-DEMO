@@ -40,6 +40,7 @@ public class ContentValidation {
         button = new Button("Enter");
         button.getStyleClass().add("button");
 
+        // Acá trabajan los botones
         button.setOnAction(event -> {
             controller.closeStage();
             ContentStage contentStage = new ContentStage();
