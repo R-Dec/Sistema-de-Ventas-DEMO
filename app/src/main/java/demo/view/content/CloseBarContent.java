@@ -23,7 +23,6 @@ public class CloseBarContent {
 
         stackPane.setPrefHeight(32);
         stackPane.setMaxHeight(32);
-        stackPane.setPrefWidth(1440);
         stackPane.setAlignment(Pos.CENTER_RIGHT);
 
         stackPane.getStylesheets().add("styles/CloseBarContent.css");

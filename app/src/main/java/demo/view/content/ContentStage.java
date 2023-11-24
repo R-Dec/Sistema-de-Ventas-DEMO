@@ -19,10 +19,10 @@ public class ContentStage {
         Rectangle2D bounds = screen.getVisualBounds();
 
         CloseBarContent closeBarContent = new CloseBarContent(this);
-        SelectorBar selectorBar = new SelectorBar();
+        Content content = new Content();
 
         vBox = new VBox();
-        vBox.getChildren().addAll(closeBarContent.getStackPane(), selectorBar.getStackPane());
+        vBox.getChildren().addAll(closeBarContent.getStackPane(), content.getStackPane());
 
         scene = new Scene(vBox, bounds.getWidth(), bounds.getHeight());
 

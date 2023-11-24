@@ -1,0 +1,135 @@
+.customer-title,
+.product-title {
+    -fx-font-size: 20px;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-text-fill: white;
+}
+
+.customer-container {
+    -fx-background-color: #B6806A;
+}
+
+.customer-vbox,
+.product-vbox {
+    -fx-padding: 32 40 32 40;
+}
+
+.product-container {
+    -fx-background-color: #768B71;
+}
+
+.label-dni,
+.label-name,
+.label-last-name,
+.label-phone,
+.label-email,
+.label-product-name,
+.label-product-code,
+.label-product-units,
+.label-product-unit-price,
+.label-product-total-price {
+    -fx-font-size: 14px;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-text-fill: white;
+}
+
+.customer-dni-field,
+.customer-name-field,
+.customer-last-name-field,
+.customer-phone-field,
+.customer-email-field {
+    -fx-background-color: #B6806A;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-border-color: #803030;
+    -fx-border-width: 2;
+}
+
+.product-field,
+.product-name-field,
+.product-code-field,
+.product-units-field,
+.product-unit-price-field,
+.product-total-price-field {
+    -fx-background-color: #768B71;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-border-color: #3F6163;
+    -fx-border-width: 2;
+}
+
+.product-field {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+}
+
+.product-name-field,
+.product-code-field {
+    -fx-pref-width: 247px;
+    -fx-setPrefHeight: 30px;
+}
+
+.product-units-field,
+.product-unit-price-field {
+    -fx-pref-width: 152px;
+    -fx-pref-height: 30px;
+}
+
+.product-total-price-field {
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+}
+
+.select-button {
+    -fx-background-color: #3F6163;
+    -fx-background-radius: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-pref-width: 104px;
+    -fx-pref-height: 30px;
+}
+
+.calculate-price {
+    -fx-background-color: #3F6163;
+    -fx-background-radius: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-pref-width: 122px;
+    -fx-pref-height: 30px;
+}
+
+.add-product {
+    -fx-background-color: #3F6163;
+    -fx-background-radius: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 30px;
+}
+
+.select-button:hover,
+.calculate-price:hover,
+.add-product:hover {
+    -fx-background-color: #B6806A;
+}
+
+.sell-button {
+    -fx-background-color: #803030;
+    -fx-background-radius: 0;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 50px;
+}
+
+.sell-button:hover {
+    -fx-background-color: #B6806A;
+}

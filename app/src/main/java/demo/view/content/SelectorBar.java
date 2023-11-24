@@ -1,37 +1,44 @@
 package demo.view.content;
 
-import javafx.geometry.Side;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
+import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 public class SelectorBar {
 
     private StackPane stackPane;
-    private TabPane tabPane;
-    private Tab tabSale;
-    private Tab tabInventory;
-    private Tab tabSupplier;
+    private VBox vBox;
+
+    private Button buttonSale;
+    private Button buttonInventory;
+    private Button buttonSupplier;
 
     public SelectorBar() {
 
-        tabPane = new TabPane();
-
-        tabSale = new Tab("Sale");
-        tabSale.setClosable(false);
-
-        tabInventory = new Tab("Inventory");
-        tabInventory.setClosable(false);
-
-        tabSupplier = new Tab("Supplier");
-        tabSupplier.setClosable(false);
-
-        tabPane.getTabs().addAll(tabSale, tabInventory, tabSupplier);
-        tabPane.setSide(Side.LEFT);
-
         stackPane = new StackPane();
+        stackPane.getStyleClass().add("selector-bar");
+        stackPane.setMaxWidth(40);
 
-        stackPane.getChildren().add(tabPane);
+        vBox = new VBox();
+
+        buttonSale = new Button("S");
+        buttonSale.getStyleClass().add("button-sale");
+        buttonSale.setPrefHeight(40);
+        buttonSale.setPrefWidth(40);
+
+        buttonInventory = new Button("I");
+        buttonInventory.getStyleClass().add("button-inventory");
+        buttonInventory.setPrefHeight(40);
+        buttonInventory.setPrefWidth(40);
+
+        buttonSupplier = new Button("P");
+        buttonSupplier.getStyleClass().add("button-supplier");
+        buttonSupplier.setPrefHeight(40);
+        buttonSupplier.setPrefWidth(40);
+
+        vBox.getChildren().addAll(buttonSale, buttonInventory, buttonSupplier);
+
+        stackPane.getChildren().add(vBox);
 
         stackPane.getStylesheets().add("styles/SelectorBar.css");
 
