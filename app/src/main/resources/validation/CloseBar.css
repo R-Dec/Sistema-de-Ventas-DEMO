@@ -1,0 +1,23 @@
+.stack-pane,
+.button {
+    -fx-background-color: #495875;
+}
+
+.stack-pane {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: white;
+}
+
+.button {
+    -fx-padding: 0 5 0 5;
+    -fx-margin: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 11px;
+}
+
+.button:hover {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: white;
+}

@@ -1,0 +1,37 @@
+.stack-pane {
+    -fx-background-color: #495875;
+    -fx-padding: 40 32 40 32;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 16px;
+}
+
+.user-field,
+.pass-field {
+    -fx-background-color: #495875;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #4E9992;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 14px;
+}
+
+.user-field:focused,
+.pass-field:focused {
+    -fx-border-color: #8FB88F;
+}
+
+.button {
+    -fx-background-color: #4E9992;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 16px;
+    -fx-background-radius: 16;
+}
+
+.button:hover {
+    -fx-background-color: #8FB88F;
+}

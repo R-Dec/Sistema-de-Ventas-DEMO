@@ -1,38 +1,38 @@
 package demo.view.validation;
 
-import demo.view.Controller;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 public class CloseBar {
 
     private StackPane stackPane;
     private Button button;
 
-    public CloseBar(Controller controller) {
-
+    public CloseBar(Stage stage) {
         stackPane = new StackPane();
-        stackPane.getStyleClass().add("close-bar");
+        stackPane.getStyleClass().add("stack-pane");
 
-        button = new Button("X");
+        button = new Button();
         button.getStyleClass().add("button");
+        button.setText("Close");
+        button.setMaxHeight(21);
 
-        button.setOnAction(event -> controller.closeStage());
+        button.setOnAction(event -> stage.close());
+
+        stackPane.setAlignment(Pos.CENTER_RIGHT);
 
         stackPane.getChildren().add(button);
 
-        stackPane.setPrefHeight(24);
-        stackPane.setPrefWidth(432);
-        stackPane.setAlignment(Pos.CENTER_RIGHT);
+        stackPane.setPrefHeight(21);
+        stackPane.setPrefWidth(270);
 
-        stackPane.getStylesheets().add("styles/CloseBar.css");
-
+        stackPane.getStylesheets().add("validation/CloseBar.css");
     }
 
     public StackPane getStackPane() {
-
         return stackPane;
-
     }
+
 }

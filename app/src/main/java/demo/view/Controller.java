@@ -1,41 +1,26 @@
 package demo.view;
 
-import demo.view.validation.CloseBar;
-import demo.view.validation.ContentValidation;
-import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import demo.view.validation.Principal;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Controller {
 
-    private Scene scene;
-    private StackPane stackPane;
-    private VBox vBox;
+    private final Stage stage;
 
-    public Controller() {
+    public Controller(Stage stage) {
+        this.stage = stage;
+        this.stage.setTitle("Login");
 
-        CloseBar closeBar = new CloseBar(this);
-        ContentValidation contentValidation = new ContentValidation(this);
+        Principal principal = new Principal(stage);
 
-        vBox = new VBox();
-        vBox.getChildren().addAll(closeBar.getStackPane(), contentValidation.getStackPane());
-
-        stackPane = new StackPane();
-        stackPane.getChildren().add(vBox);
-
-        scene = new Scene(stackPane);
-
+        stage.setScene(principal.getScene());
     }
 
-    public Scene getScene() {
+    public void startStage() {
 
-        return scene;
-
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.show();
     }
 
-    public void closeStage() {
-
-        stackPane.getScene().getWindow().hide();
-
-    }
 }
